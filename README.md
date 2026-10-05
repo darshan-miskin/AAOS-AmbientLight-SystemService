@@ -9,23 +9,23 @@ Unlike standard Android application-layer development, this project operates ent
 
 
 +------------------------------------------------------------------------------+
-|                                [ Client App / UI ]                                    |
+|                                [ Client App / UI ]                           |
 +------------------------------------------------------------------------------+
-                     │
-                    ▼ (Binder IPC via Context.getSystemService)
+                                    │
+                                    ▼ (Binder IPC via Context.getSystemService)
 +------------------------------------------------------------------------------+
-|    [ VehicleAmbientLightManager (SDK Manager) ]   |
+|              [ VehicleAmbientLightManager (SDK Manager) ]                    |
 +------------------------------------------------------------------------------+
-                     │
-                    ▼ (IVehicleAmbientLightService.Stub / Proxy)
+                                    │
+                                    ▼ (IVehicleAmbientLightService.Stub / Proxy)
 +------------------------------------------------------------------------------+
-|     [ VehicleAmbientLightService (SystemServer) ]     |
-|                   (PID 1000, SELinux Enforced)                         |
+|               [ VehicleAmbientLightService (SystemServer) ]                  |
+|                        (PID 1000, SELinux Enforced)                          |
 +------------------------------------------------------------------------------+
-                     │
-                    ▼
+                                    │
+                                    ▼
 +------------------------------------------------------------------------------+
-|   [ AOSP System Service Registry & Binder Driver ]   |
+|               [ AOSP System Service Registry & Binder Driver ]               |
 +------------------------------------------------------------------------------+
 
 ---
