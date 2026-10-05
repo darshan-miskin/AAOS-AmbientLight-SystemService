@@ -1,0 +1,8 @@
+# Other existing proguard rules
+
+# ================ Add the following lines ===================
+-keepclassmembers class * {
+    *** kotlinx.coroutines.**;
+}
+-dontwarn kotlinx.coroutines.**
+# ================ Add the above lines ===================

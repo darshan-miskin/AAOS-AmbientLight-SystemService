@@ -1,0 +1,23 @@
+java_library_static {
+    name: "services.core.unboosted",
+    defaults: [
+	....
+    ],
+    srcs: [
+        "java/**/*.kt",  	// <------------- Add this line ---------
+	....
+    ],
+    libs: [
+        "kotlinx_coroutines",	 	// <------------- Add this line ---------
+        "jetbrains-annotations",	 // <------------- Add this line ---------
+    ],
+}
+
+
+java_library {
+    name: "services.core",
+    static_libs: [
+	....
+        "kotlinx-coroutines-core",	// <------------- Add this line ---------
+    ],
+}
