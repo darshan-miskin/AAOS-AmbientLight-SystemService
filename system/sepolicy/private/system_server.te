@@ -1,0 +1,5 @@
+# other system server permissions
+
+# ===================== Add the following line ==================
+allow system_server vehicle_ambient_light_service:service_manager { add find };
+
