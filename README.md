@@ -7,7 +7,7 @@ A production-grade, end-to-end custom Android Automotive OS (AAOS) system servic
 
 Unlike standard Android application-layer development, this project operates entirely within the OS framework layer (`frameworks/base`):
 
-
+```
 +------------------------------------------------------------------------------+
 |                                [ Client App / UI ]                           |
 +------------------------------------------------------------------------------+
@@ -27,7 +27,7 @@ Unlike standard Android application-layer development, this project operates ent
 +------------------------------------------------------------------------------+
 |               [ AOSP System Service Registry & Binder Driver ]               |
 +------------------------------------------------------------------------------+
-
+```
 ---
 
 ## 📂 Source Code Changes
