@@ -2,7 +2,7 @@
 
 A production-grade, end-to-end custom Android Automotive OS (AAOS) system service implemented within the Android Open Source Project (AOSP). This project demonstrates low-level framework modification, custom Binder IPC architecture, system server registration, and strict SELinux policy enforcement on a Cuttlefish virtual device.
 
-<video src="https://github.com/darshan-miskin/AAOS-AmbientLight-SystemService/blob/master/Screencast%20From%202026-10-07%2010-10-19.mp4" width="100%" autoplay loop muted playsinline></video>
+https://github.com/user-attachments/assets/36617da6-3445-4115-bb4a-5de686658363
 
 ---
 ## 🏗️ Architectural Overview
