@@ -166,7 +166,7 @@ Service Operational: true
 Bash
 
 ```
-adb shell cmd vehicle_ambient_light set 500
+adb -s 127.0.0.1:6520 shell cmd vehicle_ambient_light set 500
 ```
 
 _Expected Output:_ `Successfully set ambient lux to 500`
@@ -175,7 +175,7 @@ _Expected Output:_ `Successfully set ambient lux to 500`
 Bash
 
 ```
-adb shell cmd vehicle_ambient_light get
+adb -s 127.0.0.1:6520 shell cmd vehicle_ambient_light get
 ```
 
 _Expected Output:_ `Current ambient lux: 500`
