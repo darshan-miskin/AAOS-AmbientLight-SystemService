@@ -161,6 +161,26 @@ Service Operational: true
 ------------------------------------
 ```
 
+### 5. Simulate Client App getLux() & setLux() calls to VehicleAmbientLightService
+
+Bash
+
+```
+adb shell cmd vehicle_ambient_light set 500
+```
+
+_Expected Output:_ `Successfully set ambient lux to 500`
+
+
+Bash
+
+```
+adb shell cmd vehicle_ambient_light get
+```
+
+_Expected Output:_ `Current ambient lux: 500`
+
+
 ## 🛡️ Troubleshooting SELinux Denials
 
 If you encounter boot loops or `SecurityException` during bring-up, inspect kernel audit logs for `avc: denied` violations:
