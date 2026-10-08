@@ -74,4 +74,34 @@ class VehicleAmbientLightService(private val context: Context) : IVehicleAmbient
         }
     }
 
+    override fun onShellCommand(
+        inF: FileDescriptor?,
+        out: FileDescriptor?,
+        err: FileDescriptor?,
+        args: Array<out String>,
+        callback: android.os.ShellCallback?,
+        resultReceiver: android.os.ResultReceiver
+    ) {
+        PrintWriter(FileOutputStream(out ?: FileDescriptor.out)).use { writer ->
+            if (args.isNotEmpty()) {
+                when (args[0]) {
+                    "set" -> {
+                        val value = args.getOrNull(1)?.toIntOrNull() ?: 0
+                        setLux(value)
+                        writer.println("Successfully set ambient lux to $value")
+                    }
+                    "get" -> {
+                        writer.println("Current ambient lux: ${getLux()}")
+                    }
+                    else -> {
+                        writer.println("Unknown command. Usage: set [value] or get")
+                    }
+                }
+            } else {
+                writer.println("VehicleAmbientLightService commands: set, get")
+            }
+            writer.flush()
+        }
+        resultReceiver.send(0, null)
+    }
 }
