@@ -2,7 +2,9 @@
 
 A production-grade, end-to-end custom Android Automotive OS (AAOS) system service implemented within the Android Open Source Project (AOSP). This project demonstrates low-level framework modification, custom Binder IPC architecture, system server registration, and strict SELinux policy enforcement on a Cuttlefish virtual device.
 
-https://github.com/user-attachments/assets/36617da6-3445-4115-bb4a-5de686658363
+
+https://github.com/user-attachments/assets/81701768-5fcf-47c2-92d0-adbb10d3c1d1
+
 
 ---
 ## 🏗️ Architectural Overview
